@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_weixin/exercise/exercisepvb1.dart';
+import 'package:flutter_weixin/exercise/exercisepvb2.dart';
 import 'package:flutter_weixin/home/HomePage.dart';
+import 'package:flutter_weixin/home/PageViewBuidl.dart';
 import 'package:flutter_weixin/home/authority_CanKao.dart';
 import 'package:flutter_weixin/home/BottomNavigationBar.dart';
 
@@ -12,5 +15,5 @@ void main() => runApp(MaterialApp(
       primaryColor: Color(AppColors.AppBarColor),
       cardColor: Color(AppColors.AppBarColor)
   ),
-  home: HomePage(),
+  home: exercisepvb2(),
 ));

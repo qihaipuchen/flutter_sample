@@ -9,7 +9,7 @@ import 'package:flutter_weixin/constants.dart';
 
 class NavigationIconViwe {
   BottomNavigationBarItem navigationBarItem;
-
+//边化前和边话后
   NavigationIconViwe({Key key, String title, IconData mIcon, IconData IconData})
       : navigationBarItem = BottomNavigationBarItem(
     icon: Icon(mIcon),
@@ -68,8 +68,6 @@ class HomeScreenState extends State<mBottomNavigationBar> {
 
   @override
   Widget build(BuildContext context) {
-
-
     final BottomNavigationBar botNavBar = BottomNavigationBar(
       fixedColor: const Color(AppColors.TabIconActive),
       items: _navigationIconView.map((NavigationIconViwe view) {

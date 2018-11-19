@@ -114,6 +114,8 @@ class flutterrow extends StatelessWidget {
               fit: BoxFit.cover,
             ),
             titleSection,
+
+
             buttonSection,
             textSection,
           ],

@@ -88,7 +88,7 @@ class startCastState extends State<startCast> {
   }
 
   void _onItemTapped(int index) {
-    setState(() {
+       setState(() {
       _selectedIndex = index;
     });
   }

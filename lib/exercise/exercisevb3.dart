@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+/**
+ * 登陆界面
+ */
 class LoginPage1 extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -86,6 +89,7 @@ class LoginPageState extends State<LoginPage1> {
       return;
     }
     if(pass.length==0){
+     //Navigator.of(context).pop();
       scaffoldKey.currentState.showSnackBar(new SnackBar(content: new Text("请输入密码")));
     }
   }

@@ -14,6 +14,7 @@ import 'package:flutter_weixin/lianxicast/dart3.dart';
 import 'package:flutter_weixin/lianxicast/startCast.dart';
 import 'package:flutter_weixin/lianxicast/startCast1.dart';
 import 'package:flutter_weixin/pro_v/persion.dart';
+import 'package:flutter_weixin/project/mainActivity.dart';
 
 import './constants.dart' show AppColors;
 import './home/home_screen.dart';
@@ -23,5 +24,5 @@ void main() => runApp(MaterialApp(
       theme: ThemeData.light().copyWith(
           primaryColor: Color(AppColors.AppBarColor),
           cardColor: Color(AppColors.AppBarColor)),
-      home: LoginPage1(),
+      home: mainActivity(),
     ));

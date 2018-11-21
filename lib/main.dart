@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_weixin/exercise/exercisepLinnerlayout.dart';
 import 'package:flutter_weixin/exercise/exercisepvb1.dart';
 import 'package:flutter_weixin/exercise/exercisepvb2.dart';
+import 'package:flutter_weixin/exercise/exercisevb3.dart';
 import 'package:flutter_weixin/exercise/fragment/flutterrow.dart';
 import 'package:flutter_weixin/home/HomePage.dart';
 import 'package:flutter_weixin/home/PageViewBuidl.dart';
@@ -9,6 +10,7 @@ import 'package:flutter_weixin/home/authority_CanKao.dart';
 import 'package:flutter_weixin/home/BottomNavigationBar.dart';
 import 'package:flutter_weixin/lianxicast/cast1.dart';
 import 'package:flutter_weixin/lianxicast/cast2.dart';
+import 'package:flutter_weixin/lianxicast/dart3.dart';
 import 'package:flutter_weixin/lianxicast/startCast.dart';
 import 'package:flutter_weixin/lianxicast/startCast1.dart';
 import 'package:flutter_weixin/pro_v/persion.dart';
@@ -21,5 +23,5 @@ void main() => runApp(MaterialApp(
       theme: ThemeData.light().copyWith(
           primaryColor: Color(AppColors.AppBarColor),
           cardColor: Color(AppColors.AppBarColor)),
-      home: MyInfoPage(),
+      home: LoginPage1(),
     ));

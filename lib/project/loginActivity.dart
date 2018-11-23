@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_weixin/exercise/exercisepostshow.dart';
 import 'package:flutter_weixin/home/HomePage.dart';
 import 'package:flutter_weixin/kongjianuse/KongJian.dart';
 import 'package:flutter_weixin/project/Net.dart';
@@ -137,7 +138,8 @@ class _loginState extends State<loginActivity> {
           new RaisedButton(onPressed: () {
             Navigator.of(context).push(
                 new MaterialPageRoute(builder: (context) {
-                  return new AspectRatioUser();
+          //        return new AspectRatioUser();
+                  return new FPostShow();
                 }),
               
             );

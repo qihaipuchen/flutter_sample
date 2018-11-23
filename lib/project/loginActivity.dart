@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_weixin/home/HomePage.dart';
+import 'package:flutter_weixin/kongjianuse/KongJian.dart';
+import 'package:flutter_weixin/project/Net.dart';
+import 'package:flutter_weixin/project/postshow.dart';
 
 class loginActivity extends StatefulWidget {
   @override
@@ -18,7 +22,9 @@ class _loginState extends State<loginActivity> {
       children: <Widget>[
         new Icon(
           Icons.home,
-          color: Theme.of(context).accentColor,
+          color: Theme
+              .of(context)
+              .accentColor,
           size: 80.0,
         ),
       ],
@@ -54,7 +60,7 @@ class _loginState extends State<loginActivity> {
     );
     //要修复上面中的示例，其中3个图像的行对于其渲染框太宽，并导致红色条带，使用Expanded控件包装每个控件。默认情况下，每个控件的弹性系数为1，将行的三分之一分配给每个窗口小部件。
     Row row3 =
-        new Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
+    new Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
       new Expanded(child: new Image.asset('image/ic_launcher_round.png')),
       new Expanded(child: new Image.asset('image/ic_launcher_round.png')),
       new Expanded(child: new Image.asset('image/ic_launcher_round.png')),
@@ -94,9 +100,7 @@ class _loginState extends State<loginActivity> {
     //测试 Expanded  用法
 
     Container mCon = new Container(
-
       child: new Row(
-
         children: <Widget>[
           new Expanded(
             child: new Column(
@@ -106,10 +110,38 @@ class _loginState extends State<loginActivity> {
                 new Text("第二个"),
               ],
             ),
-
           ),
-
           new Text("13"),
+        ],
+      ),
+    );
+    //路由测试
+
+    Container container = new Container(
+      child: new Column(
+        children: <Widget>[
+          new RaisedButton(
+            onPressed: () {
+              //第一种跳转方式
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (context) {
+                  //指定跳转的页面
+                  return new ListViewDemo();
+                },
+              ));
+
+              //   Navigator.of(context).pushNamed("/demo1");
+            },
+            child: new Text("点击我路由跳转"),
+          ),
+          new RaisedButton(onPressed: () {
+            Navigator.of(context).push(
+                new MaterialPageRoute(builder: (context) {
+                  return new AspectRatioUser();
+                }),
+              
+            );
+          },child: new Text("点击我跳转"),)
         ],
       ),
     );
@@ -127,7 +159,9 @@ class _loginState extends State<loginActivity> {
           row3,
           packedRow,
           mCenter,
-          mCon
+          mCon,
+          container,
+
         ],
       ),
     );

@@ -5,6 +5,7 @@ import 'package:flutter_weixin/home/HomePage.dart';
 import 'package:flutter_weixin/kongjianuse/KongJian.dart';
 import 'package:flutter_weixin/project/Net.dart';
 import 'package:flutter_weixin/project/postshow.dart';
+import 'package:flutter_weixin/realse/login.dart';
 
 class loginActivity extends StatefulWidget {
   @override
@@ -26,7 +27,7 @@ class _loginState extends State<loginActivity> {
           color: Theme
               .of(context)
               .accentColor,
-          size: 80.0,
+          size: 90.0,
         ),
       ],
     );
@@ -185,7 +186,16 @@ class _loginState extends State<loginActivity> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         new RaisedButton(
-          onPressed: () {},
+          onPressed: () {
+
+            Navigator.of(context).push(new MaterialPageRoute(
+              builder: (context) {
+                //指定跳转的页面
+                return new Login();
+              },
+            ));
+
+          },
           child: Text("登陆"),
           color: Colors.blue,
         )

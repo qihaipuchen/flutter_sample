@@ -1,0 +1,21 @@
+   appBar: new AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        centerTitle: true,
+        title: new Text(
+          "发布成功",
+          style: new TextStyle(
+              color: Colors.black,
+              fontSize: 18.0,
+              fontWeight: FontWeight.normal),
+        ),
+        leading: IconButton(
+            icon: new Image.asset("assets/images/nav_close.png"),
+            onPressed: () {
+              Navigator.maybePop(context);
+            }),
+      ),
+
+
+
+

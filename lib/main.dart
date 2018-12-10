@@ -4,6 +4,7 @@ import 'package:flutter_weixin/exercise/exercisepvb1.dart';
 import 'package:flutter_weixin/exercise/exercisepvb2.dart';
 import 'package:flutter_weixin/exercise/exercisevb3.dart';
 import 'package:flutter_weixin/exercise/fragment/flutterrow.dart';
+import 'package:flutter_weixin/home/FaBuSuccess.dart';
 import 'package:flutter_weixin/home/HomePage.dart';
 import 'package:flutter_weixin/home/PageViewBuidl.dart';
 import 'package:flutter_weixin/home/authority_CanKao.dart';
@@ -14,6 +15,7 @@ import 'package:flutter_weixin/lianxicast/dart3.dart';
 import 'package:flutter_weixin/lianxicast/startCast.dart';
 import 'package:flutter_weixin/lianxicast/startCast1.dart';
 import 'package:flutter_weixin/pro_v/persion.dart';
+import 'package:flutter_weixin/project/cust1.dart';
 import 'package:flutter_weixin/project/mainActivity.dart';
 
 import './constants.dart' show AppColors;
@@ -24,9 +26,10 @@ void main() => runApp(MaterialApp(
       theme: ThemeData.light().copyWith(
           primaryColor: Color(AppColors.AppBarColor),
           cardColor: Color(AppColors.AppBarColor)),
-      home: mainActivity(),
-  routes: <String,WidgetBuilder>{
-    "/demo1":(BuildContext context)=>new HomePage(),
-  },
-
+      //home: cust1(),
+      home: SamplePage(),
+ //  home: mainActivity(),
+      routes: <String, WidgetBuilder>{
+        "/demo1": (BuildContext context) => new HomePage(),
+      },
     ));

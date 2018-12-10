@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_weixin/exercise/exercisepostshow.dart';
+import 'package:flutter_weixin/exercise/fragment/HomeFragment.dart';
 import 'package:flutter_weixin/home/HomePage.dart';
 import 'package:flutter_weixin/kongjianuse/KongJian.dart';
 import 'package:flutter_weixin/project/Net.dart';
 import 'package:flutter_weixin/project/postshow.dart';
+import 'package:flutter_weixin/realse/list.dart';
 import 'package:flutter_weixin/realse/login.dart';
 
 class loginActivity extends StatefulWidget {
@@ -191,6 +193,7 @@ class _loginState extends State<loginActivity> {
             Navigator.of(context).push(new MaterialPageRoute(
               builder: (context) {
                 //指定跳转的页面
+                return new SampleAppPage();
                 return new Login();
               },
             ));
